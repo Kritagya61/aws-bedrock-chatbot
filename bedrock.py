@@ -5,9 +5,9 @@ from langchain.llms.bedrock import Bedrock
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 
-AWS_ACCESS_KEY = "ASIAYZ7GE5SNFKNIJ7RH"
-AWS_SECRET_ACCESS_KEY = "BPIutYG2xj9YHSvpWcP6L6rqGHUNsfFOC5dlsMOZ"
-AWS_SESSION_TOKEN = "IQoJb3JpZ2luX2VjEN///////////wEaCmFwLXNvdXRoLTEiRjBEAiB28GBXIiYFIeHpDQJ0WN/xrL/fLkP5xei4zIlMMaQ1LwIgVO6+6gHfcL4nVwjJg6SdDtCDV/2dbFe3mcHpxhYkV4oqtgMIeBAEGgw2MDU1MzYxODU0OTgiDO9X6MBilNGXv+gUKyqTA9e5arYiXEPImr0Xlo9TIwnbP32b4QTuCe3nv6TI4n1B+bv5D9jNl1KgoqnF1QDesil+KNiimRWZDOwd4T4GHtmbNrDOXorCOCkkoKZIs2dANA39sYDnZrfj3RtN0jpK4f8C4Vi6xB4Z0HmV3uuI9aDo3t+yLgSN7MQlC3pRTkJOT2tohyTuB04xbJGV0E+S5NOhFVFXLCa+2oyjx9HaNjbWwsYpYFB6GRsD6caSjkhL+o74bAFJluuKxt3LSC/2kW09/Ph2I8Ua/VoTu/w8DymxCNUzW59ORRARBI/btX+gefJn3sBILNqETnaGjEQETSPbas35BXfniX+lFjY8PdDE8NuUwp/fX3iUUBP8OOwpkuS469lHJgb5qpfSN7hHdtr5B02IhF9g58vQ41DiVVPM4XRcZHad1Eeq9zlo3XJFJ4U1FucRAVk5f/86kWowazbFsUTDfuhSITO5nN7164vyTdh3ty1Kp0JCYr6dcBkoQBIW6bq7+kCHQE2kRkE42akIqSWLbmniOyzjw+M3dgoNUHowvoPbrAY6pwEIy3HXgh+PT0HIeGFdCU3JNElLhRngKLNkfad2FUP1UJ0HwkD9tXA288UeT9/Z6ENo86/gb2VfiVP5WfZ2ZC3SFmnDbeAce21aLRssEtyNho+3rDny9/kq+2Ig6JKfXMNRYXEp+ofXPfXedyn9lphqgBXBcz7/g29yqlRZ3oBCXZeeSB4htaNzAdS7g18brdo52aRBMK8G8LrF4VPaR5cPzopeqLxrKg=="
+AWS_ACCESS_KEY = "ASIAYZ7GE5SNCBZAMZJ2"
+AWS_SECRET_ACCESS_KEY = "efC3qov4Zey4ohe6512sYZTYBBToIo14g6KzgLgu"
+AWS_SESSION_TOKEN="IQoJb3JpZ2luX2VjEPr//////////wEaCmFwLXNvdXRoLTEiRzBFAiEAhK2HlHArH1oK9BmhWRMFD4NEcTrLUINVRQbhTwyH7g0CIHTQZuXOXXKLW9X61nFjaDpWd34Hl4lWum4xR/lcZp2bKrcDCJP//////////wEQBBoMNjA1NTM2MTg1NDk4IgzQeiJ5mmYhr08N++kqiwN7t2kMJ1mLs8LSd48rGZfHvvD+co51wNndWEQQjXuUFGvpw0WJJGDrEL9868nptvLubmLHBEDwIr2u2tGYpMQureDjKIG681+AkGsB17Nyq+074Qy72xPMRr0Rmm2FuFIXk9Fknsqbgjf7C6Fs0Wm02X3ccuS80zS7Vd/EhbeE6KHRA6RoJvPXHz+j+bW74SCfANtLG0RouPdrc+G6oPv0kmKvFZfSetMxd5nDO/eLE2Koi8dsxSlZBmXZMxa7/mCeSRJTIfFBcqVGUbPhFkRaPPT5oxrBrpAXOxuZbeyV/MJ9gMmS3vkTQgRUHvorXQbWvohogtpR3zKcJPj0RO5NA0my/hK+Z8fcVpUt6msX6H7vjBUt6pXOf+jJMptzZzH1x0TXmVaQtXo9/qpEbf4FotihjYs6PhXQHhIHzT21eUpVvLTR/INgWcLnuqiy4VXQT1qmz+g8IOUJ1ALlKMaA+EiCUCGdSech+/M9aYvJS9yBnx/g3Xfrxl1xJOw6OHPpBLdSIPT2NWw8RTCpjuGsBjqmAZ5VkeFKVM2p7DSXdJEaOwovErcL71rtwQXN0H/7LizwJDvfSaTiV6i8MftMbrPM7kGp4dcS8wd2aVKU07FpzQ6+9Dng4yAvqtVi/iXFZDeYQyfat0E+szVJKH3GlP40fSerUwSze7AtfZUln+4blGhJVH/7d8ZiRTDdLmPkkQ7XOs7NCZBN86SxEESQnxbEJmSdCe4JkvyLF29c1tdSVXx8xfOvnKE="
 AWS_REGION = "us-east-1"
 
 
@@ -44,8 +44,8 @@ def bedrock_chain():
     titan_llm.model_kwargs = {"temperature": 0.5, "maxTokenCount": 700}
 
     prompt_template = """System: The following is a friendly conversation between a knowledgeable helpful assistant and a customer.
-        The assistant works at the Hotel Paradise, a five-star hotel located in the heart of the city, with luxurious rooms, a spa, a pool, and a restaurant.
-        The assistant is talkative and provides lots of specific details from it's context.
+    The assistant is talkative and provides lots of specific details from it's context.
+
 
         Current conversation:
         {history}
